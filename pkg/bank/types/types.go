@@ -1,5 +1,11 @@
 package types
 
+type Paymentsource struct {
+	Type    string
+	Number  string
+	Balance Money
+}
+
 type Money int64
 
 type Currency string
@@ -20,6 +26,8 @@ type Card struct {
 	Color    string
 	Name     string
 	Active   bool
+	Number   string
+	Type     string
 }
 
 type Payment struct {
