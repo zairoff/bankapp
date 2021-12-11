@@ -10,8 +10,6 @@ func Max(payments []types.Payment) types.Payment {
 		if payments[i].Amount > payments[temp].Amount {
 			temp = i
 		}
-		// 	fmt.Println(i)
-
 	}
 	return payments[temp]
 }
